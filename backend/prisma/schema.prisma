@@ -20,6 +20,10 @@ model SalesRecord {
   gender                String
   age                   Int
   customerRegion        String
+  customerType          String?
+  productId             String
+  productName           String?
+  brand                 String?
   productCategory       String
   tags                  String[]
   quantity              Int
@@ -28,6 +32,12 @@ model SalesRecord {
   totalAmount           Float
   finalAmount           Float
   paymentMethod         String
+  orderStatus           String?
+  deliveryType          String?
+  storeId               String?
+  storeLocation         String?
+  salespersonId         String?
+  employeeName          String
   createdAt             DateTime @default(now())
   updatedAt             DateTime @updatedAt
 

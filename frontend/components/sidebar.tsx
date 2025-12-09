@@ -56,7 +56,7 @@ export function Sidebar() {
   }
 
   return (
-    <aside className="w-52 bg-background border-r border-border flex flex-col">
+    <aside className="w-60 bg-[#adadad]/10 border-r border-border flex flex-col">
       {/* Logo Section */}
       <div className="p-4 border-b border-border">
         <div className="flex items-center gap-3">
@@ -72,7 +72,7 @@ export function Sidebar() {
       </div>
 
       {/* Navigation */}
-      <nav className="flex-1 p-2">
+      <nav className="flex-1 p-2 gap-4">
         {navItems.map((item) => (
           <div key={item.label}>
             {item.children ? (
@@ -90,7 +90,7 @@ export function Sidebar() {
                   )}
                 </button>
                 {expandedItems.includes(item.label) && (
-                  <div className="ml-4 mt-1 space-y-1">
+                  <div className="ml-4 mt-1 space-y-1 bg-white rounded-md p-2">
                     {item.children.map((child) => (
                       <a
                         key={child.label}

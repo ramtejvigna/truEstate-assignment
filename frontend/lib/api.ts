@@ -11,6 +11,10 @@ export interface SalesRecord {
   gender: string;
   age: number;
   customerRegion: string;
+  customerType?: string;
+  productId: string;
+  productName?: string;
+  brand?: string;
   productCategory: string;
   tags: string[];
   quantity: number;
@@ -19,6 +23,12 @@ export interface SalesRecord {
   totalAmount: number;
   finalAmount: number;
   paymentMethod: string;
+  orderStatus?: string;
+  deliveryType?: string;
+  storeId?: string;
+  storeLocation?: string;
+  salespersonId?: string;
+  employeeName: string;
 }
 
 export interface SalesQueryParams {
